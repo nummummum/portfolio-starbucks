@@ -1,0 +1,92 @@
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Reserve {
+  .inner {
+    img {
+    }
+    p {
+      font-size: 17px;
+      font-weight: 700;
+      margin: 20px 0px;
+      @include center;
+    }
+    h2 {
+      font-size: 15px;
+      font-style: italic;
+      margin: 15px 0px;
+      font-weight: 700;
+      color: rgb(161, 97, 67);
+      @include center;
+      text-align: center;
+    }
+    h4 {
+      margin: 15px 0px;
+      display: flex;
+      font-size: 14px;
+      @include center;
+      line-height: 1.7;
+      text-align: center;
+    }
+    .horizen_line {
+      margin: 40px 0px;
+      border: 1px solid #eee;
+    }
+    .multiplewrap {
+      .multi1img {
+        width: auto;
+        position: relative;
+        left: 340px;
+        margin-bottom: 20px;
+      }
+      .multi2img {
+        width: auto;
+        position: relative;
+        left: 272px;
+      }
+      h4 {
+        @include center;
+        text-align: center;
+      }
+      .btnwrap {
+        @include center;
+        .btn--brown {
+          width: 250px;
+          background-color: rgb(119, 70, 30);
+          color: white;
+          border: 0;
+          height: 45px;
+          font-weight: 400;
+        }
+        margin: 20px 0;
+      }
+    }
+  }
+}
+
+.sellingreserve {
+  background-color: #f6f5f0;
+  .sellingwrap {
+    padding-top: 10px;
+    .sellingtitle {
+      position: relative;
+      margin: 20px 0;
+      padding: 20px 20px;
+      background-color: #222;
+      color: white;
+      font-size: 16px;
+      font-weight: 700;
+      p {
+      }
+    }
+    ul {
+      display: flex;
+    }
+    li {
+      margin: 10px 10px;
+    }
+  }
+}

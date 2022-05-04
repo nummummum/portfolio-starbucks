@@ -1,0 +1,300 @@
+.alignwrap {
+  .inner {
+    height: auto;
+    border: 1px solid #ddd;
+    padding: 5px 0 25px 0;
+    margin-bottom: 10px;
+    .align-title {
+      display: flex;
+      align-items: center;
+      margin: 20px 25px;
+      border-bottom: 1px solid #ddd;
+      h4 {
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+      a {
+        border-radius: 36px;
+        background-color: #ddd;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        position: absolute;
+        right: 0;
+        .material-icons {
+          font-size: 36px;
+        }
+      }
+    }
+    .align-button {
+      margin: 0 25px;
+      .button-title {
+        margin-bottom: 5px;
+        display: flex;
+        li {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 200px;
+          height: 35px;
+          margin: 10px 5px;
+          border-radius: 3px;
+          font-size: 13.5px;
+          font-weight: 700;
+          &.click {
+            background-color: #006633;
+            color: #fff;
+          }
+          &.unclick {
+            background-color: #eee;
+            color: #000;
+          }
+
+          &:hover {
+            cursor: pointer;
+            text-decoration: underline;
+          }
+        }
+      }
+      .button-detail {
+        display: flex;
+        align-items: center;
+        label {
+          display: flex;
+          align-items: center;
+          margin-right: 20px;
+          input {
+          }
+        }
+      }
+    }
+  }
+}
+
+//제품(커피) 이미지
+.coffeewrap {
+  .inner {
+    .title_wrap {
+      .title_blond,
+      .title_medium,
+      .title_dark,
+      .title_reserve {
+        display: flex;
+        height: 60px;
+        background-color: #eee;
+        align-items: center;
+        margin: 10px;
+        img {
+          height: 40px;
+          margin-left: 20px;
+        }
+        p {
+          font-size: 18px;
+          font-weight: 700;
+          margin-left: 10px;
+        }
+      }
+    }
+    .productlist {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      li {
+        margin: 0 20px;
+      }
+    }
+  }
+}
+
+//제품(커피) 상세 설정
+.productwrap {
+  width: 230px;
+  height: 300px;
+  margin: 0;
+  padding: 0;
+  .productimgwrap {
+    overflow: hidden;
+    .productimg {
+      margin: 15px 0 0 0;
+      height: 240px;
+      width: 230px;
+      object-fit: fill;
+      overflow: hidden;
+      transition: all 1s;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  .producttxt {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+  }
+}
+
+.productviewwrap {
+  .inner {
+    height: 800px;
+  }
+}
+
+//product_view 제품 설명
+.product-view-wrap {
+  .inner {
+    .view-main {
+      display: flex;
+      .main-image {
+        width: 450px;
+        height: 500px;
+        img {
+          width: 100%;
+        }
+      }
+      .main-desc {
+        position: relative;
+        width: 580px;
+        height: 500px;
+        .main-title {
+          .title-k {
+            font-size: 23px;
+            font-weight: 700;
+          }
+          .title-e {
+            font-size: 15px;
+            margin-bottom: 10px;
+          }
+          .btnwrap {
+            position: absolute;
+            right: 0;
+            top: 15px;
+            .btn {
+              width: 140px;
+              font-size: 12px;
+              height: auto;
+              margin: 0;
+              padding: 4px;
+              .btn--signin_join {
+              }
+            }
+          }
+          border-bottom: 2px solid #000;
+        }
+        .coffee-favor {
+          height: 200px;
+          .favor-desc {
+            font-size: 14px;
+            font-weight: 500;
+            margin: 20px 0;
+          }
+          .favor-type {
+            margin: 60px 0;
+            .title_blond {
+              display: flex;
+              height: 50px;
+              background-color: #eee;
+              align-items: center;
+              margin: 5px 0;
+              img {
+                height: 40px;
+                margin-left: 30px;
+              }
+              p {
+                font-size: 14px;
+                font-weight: 500;
+                margin: 0 10px;
+                padding-right: 10px;
+              }
+              :nth-child(2) {
+                border-right: 1px solid #c8c8c8;
+              }
+              :nth-child(3) {
+                color: gray;
+                margin: 0;
+              }
+            }
+          }
+          border-bottom: 1px solid #ccc;
+        }
+        .coffee-etc {
+          margin-top: 60px;
+          display: flex;
+          img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 5px;
+            width: 280px;
+          }
+        }
+      }
+    }
+    .horizen-bar {
+      border: 1px solid #ddd;
+    }
+    .view-sub {
+      display: flex;
+      margin-top: 35px;
+      .sub-notice {
+        width: 60%;
+        .notice-title {
+          p {
+            font-size: 13.5px;
+            line-height: 1.6;
+          }
+        }
+        .notice-context {
+          display: flex;
+          margin: 40px 0 200px 0;
+          .context-design-wrap,
+          .context-tasting {
+            width: 315px;
+            img {
+              height: 105px;
+            }
+            h2 {
+              margin: 10px 0;
+              font-size: 14px;
+              font-weight: 700;
+            }
+            p {
+              font-size: 12px;
+            }
+          }
+          .context-design-wrap {
+            margin-right: 10px;
+          }
+          .context-tasting {
+            margin-left: 10px;
+          }
+        }
+      }
+      .sub-info {
+        width: 330px;
+        margin-left: 35px;
+        .info-wrap {
+          background-color: #f4f4f2;
+          padding: 0 10px;
+          ul {
+            li {
+              padding: 20px 0;
+              border-bottom: 1px solid #ddd;
+              .info-title {
+                font-size: 16px;
+                font-weight: 600;
+                margin-bottom: 10px;
+              }
+              .info-desc {
+                color: gray;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
